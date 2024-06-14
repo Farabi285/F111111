@@ -19,18 +19,18 @@ handleEvent: async function({ api, event, client, __GLOBAL }) {
   const axios = require('axios')
 const media = (
     await axios.get(
-      'https://i.imgur.com/gU3Mq8P.mp4',
+      'https://i.imgur.com/I1c8ohs.mp4',
       { responseType: 'stream' }
     )
   ).data;
 
-	if (body.indexOf("Nurul")==0 || body.indexOf("imo")==0) {
+	if (body.indexOf("Farabi")==0 || body.indexOf("ফারাবী")==0) {
 		var msg = {
 				body: "𝐌𝐃 𝐉𝐔𝐁𝐀𝐄𝐃 𝐀𝐇𝐌𝐌𝐄𝐃 𝐉𝐎𝐘",
 				attachment: media
 			}
 			api.sendMessage( msg, threadID, messageID);
-    api.setMessageReaction("😓", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🤭", event.messageID, (err) => {}, true)
 		}
 	},
 	start: function({ nayan }) {
