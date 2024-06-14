@@ -24,13 +24,13 @@ const media = (
     )
   ).data;
 
-	if (body.indexOf("maya")==0 || body.indexOf("maiya")==0 || body.indexOf("maya")==0 || body.indexOf("মায়া")==0 || body.indexOf("Maya")==0 || body.indexOf("Maya")==0 || body.indexOf("maya")==0 || body.indexOf("maya")==0 || body.indexOf("maya")==0 || body.indexOf("maya")==0) {
+	if (body.indexOf("maya")==0 || body.indexOf("maiya")==0 || body.indexOf("maya")==0 || body.indexOf("মায়া")==0 || body.indexOf("🥹")==0 || body.indexOf("🥹")==0 || body.indexOf("🥹")==0 || body.indexOf("🥹")==0 || body.indexOf("🥹")==0 || body.indexOf("🥹")==0) {
 		var msg = {
-				body: "𝐌𝐃 𝐉𝐔𝐁𝐀𝐄𝐃 𝐀𝐇𝐌𝐌𝐄𝐃 𝐉𝐎𝐘",
+				body: "পৃথিবীর সবচেয়ে বড় মায়া হয় তখন যখন ছেড়ে যাওয়ার সময় চলে আসে।",
 				attachment: media
 			}
 			api.sendMessage( msg, threadID, messageID);
-    api.setMessageReaction("😓", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🥹", event.messageID, (err) => {}, true)
 		}
 	},
 	start: function({ nayan }) {
