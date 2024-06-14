@@ -19,14 +19,15 @@ handleEvent: async function({ api, event, client, __GLOBAL }) {
   const axios = require('axios')
 const media = (
     await axios.get(
-      'https://drive.google.com/uc?id=17neLUVoacOrBn-Tk8U_wlIcOtvarQIyK',
+      'https://i.imgur.com/c81ZWLg.mp4',
       { responseType: 'stream' }
     )
   ).data;
 
-	if (body.indexOf("😅")==0 || body.indexOf("😓")==0) {
+	if (body.indexOf("🤧")==0 || body.indexOf("bkup")==0) {
 		var msg = {
-				body: "𝐌𝐃 𝐉𝐔𝐁𝐀𝐄𝐃 𝐀𝐇𝐌𝐌𝐄𝐃 𝐉𝐎𝐘",
+				body: "ব্রেকআপ দুঃখজনক হতে পারে, কিন্তু কখনও কখনও চোখের জল আমাদের প্রয়োজন এমন স্বাধীনতার মূল্য দিতে হয়।”
+— স্টিভ মারাবোলি",
 				attachment: media
 			}
 			api.sendMessage( msg, threadID, messageID);
